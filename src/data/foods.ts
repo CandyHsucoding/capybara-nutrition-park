@@ -1,0 +1,1 @@
+import type{Group}from'./nutrition';export type Food={name:string;icon:string;group:Group};export const foods:Food[]=[['糙米飯','🍚','全穀雜糧類'],['豆腐','◻️','豆魚蛋肉類'],['鮮乳','🥛','乳品類'],['花椰菜','🥦','蔬菜類'],['蘋果','🍎','水果類'],['堅果','🥜','油脂與堅果種子類']].map(([name,icon,group])=>({name,icon,group:group as Group}));

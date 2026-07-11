@@ -1,0 +1,1 @@
+import{describe,it,expect}from'vitest';import{groups}from'../../data/nutrition';import{createRound,next,isOver}from'./logic';describe('game',()=>{it('缺少類別屬於六大類',()=>expect(groups).toContain(createRound().missing));it('答對進入線索',()=>expect(next(true)).toBe('clue'));it('生命歸零結束',()=>expect(isOver(0)).toBe(true))});

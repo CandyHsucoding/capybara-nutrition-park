@@ -1,0 +1,1 @@
+export const BADGE='nutrition-detective';export function readBadges(){try{return JSON.parse(localStorage.getItem('capybara-badges')||'[]')as string[]}catch{return[]}}export function awardBadge(){const b=[...new Set([...readBadges(),BADGE])];localStorage.setItem('capybara-badges',JSON.stringify(b))}
